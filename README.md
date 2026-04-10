@@ -1,93 +1,120 @@
-# 📊 Revenue Analysis & Data Cleaning Project
+# 📊 Revenue Analysis & Data Cleaning Project (Excel)
 
-## 🔍 Overview
-
-This project focuses on cleaning and analyzing a transactional dataset using Excel.
-The goal was to transform inconsistent raw data into a structured format suitable for business insights.
+An end-to-end Excel-based data analysis project focused on cleaning messy business data, applying conditional logic, and generating actionable insights using formulas and pivot tables.
 
 ---
 
-## ⚠️ Data Issues Identified
+## 📌 Project Overview
 
-* Inconsistent discount formats (decimal vs percentage)
-* Complex tax inclusion logic
-* Presence of non-active transactions affecting analysis
+This project demonstrates practical data analysis skills using Excel on a transactional dataset containing sales, discounts, tax logic, and customer activity.
 
----
-
-## 🛠 Data Cleaning Steps
-
-* Standardized discount values into consistent percentage format
-* Applied conditional logic for tax calculation
-* Filtered relevant records for accurate analysis
-* Created calculated columns:
-
-  * Net Amount
-  * Tax Amount
-  * Final Amount
-  * Normalized Discount
-  * Month extraction
-  * Customer status flag
+Key objectives:
+- Clean inconsistent and raw data
+- Apply business rules using formulas
+- Perform revenue analysis
+- Generate insights using pivot tables and trends
 
 ---
 
-## 📊 Analysis Performed
+## 🧹 Data Cleaning & Preparation
 
-### 1. Region Summary
+Several data quality issues were identified and handled:
 
-* North region has the highest average final amount per active transaction
+- **Inconsistent Discount Format**  
+  The discount column contained both whole numbers (e.g., 15) and decimals (e.g., 0.15).  
+  → Standardized into a consistent percentage format.
 
-### 2. Monthly Trend
+- **Tax Inclusion Logic**  
+  Tax calculation varied based on whether tax was already included.  
+  → Applied conditional formulas to correctly compute Net and Final amounts.
 
-* Revenue shows high fluctuations with sharp growth and decline periods
-* Significant spike observed in Jan-2025
-
----
-
-## 📸 Sample Dataset (Cleaned)
-
-The dataset contains multiple fields such as Region, Currency, Product Type, and Status.
-Below is a focused sample showing key columns used for analysis.
-
-![Dataset Sample](images/dataset_processed.png)
+- **Mixed Transaction Status**  
+  Dataset included Active, Cancelled, Churned, and Paused transactions.  
+  → Filtered appropriately for accurate analysis.
 
 ---
 
-## 📊 Region Summary (Pivot Table)
+## ⚙️ Key Calculations
 
-![Region Summary](images/region_summary.png)
+The dataset was enhanced using Excel formulas:
+
+- Net Amount  
+- Tax Amount (based on tax inclusion logic)  
+- Final Amount  
+- Discount Normalization  
+- Month extraction from date  
+- Customer behavior flag (Active + Cancelled/Churned)
 
 ---
 
-## 📈 Monthly Trend Analysis
+## 📸 Dataset Snapshot
+
+![Dataset Overview](images/dataset_overview.png)
+
+---
+
+## 🔄 Discount Normalization
+
+Converted inconsistent discount values into a standard format.
+
+![Discount Cleaning](images/discount_cleaning.png)
+
+---
+
+## 📊 Region-wise Analysis (Pivot Table)
+
+Identified regional performance using pivot tables.
+
+**Insight:**  
+North region shows the highest average final amount per active transaction.
+
+![Pivot Table](images/pivot_table.png)
+
+---
+
+## 📈 Monthly Revenue Trend
+
+Tracked revenue growth and trends over time.
+
+- Monthly Revenue  
+- Cumulative Revenue  
+- Month-over-Month Growth %
 
 ![Monthly Trend](images/monthly_trend.png)
 
 ---
 
-## 💡 Key Insights
+## 📌 Key Insights
 
-* Data inconsistency directly impacts financial calculations
-* Filtering only active transactions improves accuracy
-* Revenue trend shows volatility, indicating possible seasonality or inconsistent sales
-
----
-
-## 🧰 Tools Used
-
-* Microsoft Excel
-* Pivot Tables
-* Advanced formulas (SUMPRODUCT, IF, COUNTIF)
+- Revenue is highly uneven across regions, with North leading significantly.
+- Large fluctuations in monthly growth indicate inconsistent sales performance.
+- Data inconsistencies (discount format, tax logic) can significantly impact financial outputs if not handled correctly.
+- Customer churn patterns highlight the need for retention strategies.
 
 ---
 
-## 📁 Files
+## 🛠 Tools Used
 
-* `Revenue_Analysis_Project.xlsx` → Full working file with formulas
-* `images/` → Screenshots used in documentation
+- Microsoft Excel
+- Pivot Tables
+- Advanced Formulas (IF, SUMPRODUCT, COUNTIF, TEXT, etc.)
 
 ---
 
-## 🚀 Outcome
+## 📁 Files Included
 
-Successfully transformed messy transactional data into structured insights using Excel-based data cleaning and analysis techniques.
+- `Revenue_Analysis_Project.xlsx` → Complete working file with formulas
+- `/images` → Supporting screenshots for analysis
+
+---
+
+## 📎 Note
+
+The dataset contains multiple attributes (Region, Currency, Status, Product Type, etc.).  
+Only relevant columns are shown in focused screenshots for clarity.
+
+---
+
+## 👤 Author
+
+**Sanjay Renukuntla**
