@@ -1,6 +1,13 @@
-# 📊 Revenue Analysis & Data Cleaning Project (Excel)
+# 📊 Revenue Analysis & Data Cleaning (Excel Project)
 
-An end-to-end Excel-based data analysis project focused on cleaning messy business data, applying conditional logic, and generating actionable insights using formulas and pivot tables.
+End-to-end data cleaning and business analysis project using Excel, focused on solving real-world inconsistencies in transactional data and generating meaningful insights.
+
+---
+
+## 🎯 Business Context
+
+In real-world datasets, inconsistencies in discount formats, tax calculations, and transaction statuses can lead to incorrect financial reporting.
+This project focuses on identifying and resolving such issues to ensure accurate and reliable revenue analysis.
 
 ---
 
@@ -8,11 +15,12 @@ An end-to-end Excel-based data analysis project focused on cleaning messy busine
 
 This project demonstrates practical data analysis skills using Excel on a transactional dataset containing sales, discounts, tax logic, and customer activity.
 
-Key objectives:
-- Clean inconsistent and raw data
-- Apply business rules using formulas
-- Perform revenue analysis
-- Generate insights using pivot tables and trends
+### Key Objectives:
+
+* Clean inconsistent and raw data
+* Apply business rules using formulas
+* Perform revenue analysis
+* Generate insights using pivot tables and trends
 
 ---
 
@@ -20,34 +28,37 @@ Key objectives:
 
 Several data quality issues were identified and handled:
 
-- **Inconsistent Discount Format**  
-  The discount column contained both whole numbers (e.g., 15) and decimals (e.g., 0.15).  
+* **Inconsistent Discount Format**
+  The discount column contained both whole numbers (e.g., 15) and decimals (e.g., 0.15).
   → Standardized into a consistent percentage format.
 
-- **Tax Inclusion Logic**  
-  Tax calculation varied based on whether tax was already included.  
+* **Tax Inclusion Logic**
+  Tax calculation varied depending on whether tax was already included.
   → Applied conditional formulas to correctly compute Net and Final amounts.
 
-- **Mixed Transaction Status**  
-  Dataset included Active, Cancelled, Churned, and Paused transactions.  
-  → Filtered appropriately for accurate analysis.
+* **Mixed Transaction Status**
+  Dataset included Active, Cancelled, Churned, and Paused transactions.
+  → Filtered appropriately to ensure accurate analysis.
 
 ---
 
 ## ⚙️ Key Calculations
 
-The dataset was enhanced using Excel formulas:
+The dataset was enhanced using Excel formulas to derive meaningful metrics:
 
-- Net Amount  
-- Tax Amount (based on tax inclusion logic)  
-- Final Amount  
-- Discount Normalization  
-- Month extraction from date  
-- Customer behavior flag (Active + Cancelled/Churned)
+* Net Amount
+* Tax Amount (based on tax inclusion logic)
+* Final Amount
+* Discount Normalization
+* Month extraction from transaction date
+* Customer behavior flag (Active + Cancelled/Churned)
 
 ---
 
 ## 📸 Dataset Snapshot
+
+The dataset contains multiple attributes such as Region, Currency, Status, and Product Type.
+Below is a focused sample showing key columns used for analysis.
 
 ![Dataset Overview](images/dataset_overview.png)
 
@@ -55,7 +66,7 @@ The dataset was enhanced using Excel formulas:
 
 ## 🔄 Discount Normalization
 
-Converted inconsistent discount values into a standard format.
+Converted inconsistent discount values into a standardized format to ensure accurate calculations.
 
 ![Discount Cleaning](images/discount_cleaning.png)
 
@@ -63,9 +74,9 @@ Converted inconsistent discount values into a standard format.
 
 ## 📊 Region-wise Analysis (Pivot Table)
 
-Identified regional performance using pivot tables.
+A pivot table was used to evaluate regional performance.
 
-**Insight:**  
+**Key Finding:**
 North region shows the highest average final amount per active transaction.
 
 ![Pivot Table](images/pivot_table.png)
@@ -74,11 +85,11 @@ North region shows the highest average final amount per active transaction.
 
 ## 📈 Monthly Revenue Trend
 
-Tracked revenue growth and trends over time.
+Revenue trends were analyzed over time using:
 
-- Monthly Revenue  
-- Cumulative Revenue  
-- Month-over-Month Growth %
+* Monthly Revenue
+* Cumulative Revenue
+* Month-over-Month (MoM) Growth
 
 ![Monthly Trend](images/monthly_trend.png)
 
@@ -86,32 +97,25 @@ Tracked revenue growth and trends over time.
 
 ## 📌 Key Insights
 
-- Revenue is highly uneven across regions, with North leading significantly.
-- Large fluctuations in monthly growth indicate inconsistent sales performance.
-- Data inconsistencies (discount format, tax logic) can significantly impact financial outputs if not handled correctly.
-- Customer churn patterns highlight the need for retention strategies.
+* North region generates significantly higher revenue compared to other regions, indicating strong market performance.
+* Month-over-Month growth shows high volatility, suggesting inconsistent sales patterns.
+* Data inconsistencies (especially in discount formats and tax logic) can significantly distort financial outcomes if not handled properly.
+* Presence of customer churn alongside active transactions highlights potential retention opportunities.
 
 ---
 
 ## 🛠 Tools Used
 
-- Microsoft Excel
-- Pivot Tables
-- Advanced Formulas (IF, SUMPRODUCT, COUNTIF, TEXT, etc.)
+* Microsoft Excel
+* Pivot Tables
+* Advanced Formulas (IF, SUMPRODUCT, COUNTIF, TEXT, etc.)
 
 ---
 
 ## 📁 Files Included
 
-- `Revenue_Analysis_Project.xlsx` → Complete working file with formulas
-- `/images` → Supporting screenshots for analysis
-
----
-
-## 📎 Note
-
-The dataset contains multiple attributes (Region, Currency, Status, Product Type, etc.).  
-Only relevant columns are shown in focused screenshots for clarity.
+* `Revenue_Analysis_Project.xlsx` → Complete working file with formulas
+* `/images` → Supporting screenshots for analysis
 
 ---
 
