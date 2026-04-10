@@ -22,7 +22,8 @@ To standardize:
 ---
 
 ## 📁 Processed Dataset
-
+The dataset contains multiple fields such as Region, Currency, Product Type, Status, etc.  
+Below is a focused sample showing key columns used for analysis.
 The dataset was enhanced with calculated columns such as:
 
 * Net Amount
