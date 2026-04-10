@@ -1,3 +1,5 @@
+Excel-based end-to-end data cleaning and revenue analysis project using real-world business logic.
+
 # 📊 Revenue Analysis & Data Cleaning Project
 
 ## 🔍 Overview
